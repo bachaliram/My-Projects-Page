@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionmyprojecthome">
+        <div class="my-projects-home-page">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class="software-developer-image" />
+            <h1 class="my-projects-heading">my projects</h1>
+            <p class="my-projects-description">there are a few of my static website projects that i have developed using HTML</p>
+            <div class="d-flex flex-row justify-content-center">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="my-project-image" onclick="display('sectionadvancedtechnologies')" />
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="my-project-image" onclick="display('sectiondiwali')" />
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="my-project-image" onclick="display('sectionfoodorder')" />
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="my-project-image" onclick="display('sectionnews')" />
+            </div>
+        </div>
+    </div>
+    <div id="sectionadvancedtechnologies">
+        <div class="advanced-technologies-bg-container d-flex flex-column justify-content-end">
+            <div class="advanced-technology-card">
+                <h1 class="advanced-technologies-title">advanced technologies</h1>
+                <p class="advanced-technologies-description">machinery and equipment developed from the application of scientific knowledge</p>
+                <button class="advanced-technologies-learn-more-button">learn more</button>
+                <button class="btn btn-primary" onclick="display('sectionmyprojecthome')">back</button>
+                <button class="btn btn-primary" onclick="display('sectionmyprojecthome')">back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondiwali">
+        <div class="diwali-top-section">
+            <h1 class="diwali-top-section-heading">celebrate diwali with your friends</h1>
+        </div>
+        <div class="diwali-bottom-section">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="diwali-card-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="diwali-card-image" />
+                    <h1 class="diwali-card-name">diwali air balloon</h1>
+                    <p class="diwali-card-price">Rs 369</p>
+                </div>
+                <div class="diwa;i-card-item">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="diwali-card-image" />
+                    <h1 class="diwali-card-name">diwali-lamp</h1>
+                    <p class="diwali-card-price">Rs 50</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                </div>
+            </div>
+            <div class="diwali-card-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="diwali-card-image" />
+                <h1 class="diwali-card-name">sparklers</h1>
+                <p class="diwali-card-price">Rs 150</p>
+            </div>
+            <div class="diwali-card-item">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="diwali-card-image" />
+                <h1 class="diwali-card-name">fire crackers</h1>
+                <p class="diwali-card-price">Rs 560</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <button class="btn btn-primary" onclick="display('sectionmyprojecthome')">back</button>
+        </div>
+    </div>
+    <div id="sectionfoodorder">
+        <div class="food-order-bg-container d-flex flex-column justify-content-end">
+            <div class="order-card">
+                <h1 class="order-card-heading">happy meals</h1>
+                <p class="order-card-paragraph">discover the best food over the 1000 restaurants</p>
+                <button class="order-card-button">book now</button>
+                <button class="btn btn-primary" onclick="display('sectionmyprojecthome')">back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionnews">
+        <div class="news-bg-container d-flex flex-column justfy-content-end">
+            <div class="news-catrd">
+                <p class="news-cateory">news of the ady</p>
+                <h1 class="news-title">all educational institutes in assam to reopen from november2</h1>
+                <p class="news-description">utterpradesh pushing the districts</p>
+                <button class="news-button">read more</button>
+                <button class="btn btn-primary" onclick="display('sectionmyprojectshome')">back</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
